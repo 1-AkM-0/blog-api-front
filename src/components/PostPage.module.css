@@ -1,0 +1,12 @@
+/* .postContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: white;
+  color: rgb(26, 25, 34);
+} */
+
+.infos {
+  display: flex;
+}

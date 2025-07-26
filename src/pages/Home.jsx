@@ -7,13 +7,14 @@ export default function Home() {
 
   useEffect(() => {
     async function getPosts() {
-      const response = await api.get("/posts");
-      if (!response) {
-        throw new Error("HTTP error! status:" + response.status);
+      try {
+        const response = await api.get("/posts");
+        const data = response.data.posts;
+        console.log(data);
+        setPosts(data);
+      } catch (error) {
+        console.error("Error:", error);
       }
-      const data = response.data.posts;
-      console.log(data);
-      setPosts(data);
     }
     getPosts();
   }, []);
