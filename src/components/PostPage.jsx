@@ -10,7 +10,10 @@ export default function PostPage({ title, body, date, author }) {
     <div className={styles.postContent}>
       <div className={styles.infos}>
         <p>{formatedDate}</p>
-        <h1>{author.firstName}</h1>
+        <p>
+          <span>by </span>
+          {author.firstName}
+        </p>
       </div>
       <div className={styles.content}>
         <h1>{title}</h1>

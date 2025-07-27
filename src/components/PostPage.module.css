@@ -1,12 +1,17 @@
-/* .postContent {
+.postContent {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: white;
-  color: rgb(26, 25, 34);
-} */
+  flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 1px solid #e3b261;
+  border-radius: 12px;
+}
 
 .infos {
-  display: flex;
+  text-align: right;
+}
+
+.infos h1 {
+  font-size: 20px;
 }

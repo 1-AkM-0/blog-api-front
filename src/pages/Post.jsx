@@ -37,8 +37,12 @@ export default function Post() {
           date={post.updatedAt}
         />
       )}
+      <div className="back-home">
+        <a href="/">Back Home</a>
+      </div>
+      <button>Add a comment</button>
       {comments ? (
-        <h1>
+        <div>
           {comments.map((comment) => (
             <section key={comment.id} className="comments-section">
               <CommentSection
@@ -48,7 +52,7 @@ export default function Post() {
               />
             </section>
           ))}
-        </h1>
+        </div>
       ) : (
         <div>Loading comments...</div>
       )}

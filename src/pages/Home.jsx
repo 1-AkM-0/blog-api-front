@@ -20,7 +20,8 @@ export default function Home() {
   }, []);
 
   return (
-    <>
+    <div className="post-container">
+      <h1>All posts</h1>
       {posts.map((post) => {
         return (
           <PostCard
@@ -28,9 +29,10 @@ export default function Home() {
             title={post.title}
             body={post.body}
             date={post.createdAt}
+            author={post.author.firstName}
           />
         );
       })}
-    </>
+    </div>
   );
 }

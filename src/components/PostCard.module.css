@@ -1,0 +1,39 @@
+.postCard {
+  display: flex;
+  justify-content: center;
+  max-width: 800px;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.postCardContent {
+  border: 1px solid #e3b261;
+  border-radius: 15px;
+  width: 100%;
+  text-align: left;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  background-color: oklch(21% 0.034 264.665);
+
+  color: rgb(255, 255, 255);
+
+  margin-bottom: 1rem;
+}
+
+.title h1 {
+  font-size: 1.5rem;
+}
+
+.title,
+.body,
+.infos {
+  width: 100%;
+  padding: 0.76rem 2rem;
+}
+
+.title {
+  color: #e3b261;
+}
